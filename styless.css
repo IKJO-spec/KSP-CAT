@@ -1,0 +1,145 @@
+/* General body styles for the Electrical Products page */
+.electrical-products-page {
+    background: linear-gradient(to bottom right, #f5f5dc, darkcyan); /* Gradient background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f8f9fa; /* Light text for contrast */
+    width: 100%;
+    min-height: 100vh; /* Allow content to grow beyond the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center;
+    overflow: auto; /* Enable scrolling if needed */
+}
+
+/* Main content styling */
+.electrical-products-page main {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for content */
+    padding: 20px; /* Adjust padding */
+    border-radius: 15px;
+    text-align: justify;
+    max-width: 80%;
+    color: #1d2671; /* Darker text for readability */
+    box-sizing: border-box;
+    margin-top: 10px; /* Adjust margin to ensure visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover effect for main content */
+.electrical-products-page main:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque on hover */
+}
+
+/* Heading styling */
+.electrical-products-page h1 {
+    font-size: 2.8em;
+    margin: 20px 0; /* Ensure proper spacing */
+    text-align: center;
+    color: #333; /* Darker color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
+
+/* Paragraph styling */
+.electrical-products-page p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Products container styling */
+.products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Product division styling */
+.product-division {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.product-division:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Engine types and images styling */
+.engine-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.engine-type {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.engine-types img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust for smaller screen sizes */
+@media (max-width: 768px) {
+    .electrical-products-page main {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .electrical-products-page h1 {
+        font-size: 2em;
+    }
+
+    .electrical-products-page p {
+        font-size: 1em;
+    }
+
+    .products-container {
+        gap: 15px;
+    }
+
+    .engine-types {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Class color styles */
+.a {
+    color: #ff9f43; /* Bright orange for hover effects */
+    transition: color 0.3s;
+}
+
+.a:hover {
+    color: #ff6f61; /* Coral color on hover */
+}
+
+.b {
+    color: #ff9f43;
+}
+
+.c {
+    color: #ff6f61;
+}
+
+.d {
+    color: #ff4b5c; /* Vibrant red for footer text */
+}
