@@ -1,0 +1,91 @@
+/* General body styles for the About Us page */
+.about-us-page {
+    background: linear-gradient(to bottom right, #000000, #434343); /* Gradient background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: papayawhip;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main content styling */
+.about-us-page main {
+    background-color: rgba(135, 206, 235, 0.5); /* Semi-transparent sky blue for content */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: justify;
+    max-width: 80%; /* Slightly narrower for better readability */
+    color: papayawhip;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for main content */
+.about-us-page main:hover {
+    transform: scale(1.05); /* Slightly enlarges the content on hover */
+    background-color: rgba(135, 206, 235, 0.7); /* Slightly less transparent on hover */
+}
+
+/* Heading styling */
+.about-us-page h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text */
+}
+
+/* Paragraph styling */
+.about-us-page p {
+    text-align: justify;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Adjust for smaller screen sizes */
+@media (max-width: 768px) {
+    .about-us-page main {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .about-us-page h1 {
+        font-size: 2em;
+    }
+
+    .about-us-page p {
+        font-size: 1em;
+    }
+}
+
+/* Class color styles */
+.a {
+    color: aqua;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.a:hover {
+    color: lightcyan; /* Changes color on hover */
+}
+
+.b {
+    color: bisque;
+}
+
+.c {
+    color: skyblue;
+}
+
+.d {
+    color: blue;
+}
